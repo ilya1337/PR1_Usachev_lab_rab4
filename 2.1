@@ -1,0 +1,42 @@
+# PR1_Usachev_lab_rab4
+<html> 
+<body> 
+<h1>Сотрудники</h1> 
+<div> 
+<b>Код сотрудника:</b> <span id="CodSotrudnika"></span><br /> 
+<b>Фамилия:</b> <span id="FamilyName"></span><br /> 
+<b>Имя:</b> <span id="Name"></span><br /> 
+<b>Отчество:</b> <span id="Otchestvo"></span><br />
+<b>Должность:</b> <span id="Dolzhnost"></span><br />
+<b>Дата приема на работу:</b> <span id="DatePriemaNaRabotu"></span> 
+</div> 
+ 
+<script> 
+    if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, 
+Opera, Safari 
+        xmlhttp = new XMLHttpRequest(); 
+    } 
+    else {// code for IE6, IE5 
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP"); 
+    } 
+    xmlhttp.open("GET", "sotrudnic.xml", false); 
+    xmlhttp.send(); 
+    xmlDoc = xmlhttp.responseXML; 
+ 
+    document.getElementById("CodSotrudnika").innerHTML = 
+xmlDoc.getElementsByTagName("CodSotrudnika")[0].childNodes[0].nodeValue; 
+    document.getElementById("FamilyName").innerHTML = 
+xmlDoc.getElementsByTagName("FamilyName")[0].childNodes[0].nodeValue;
+    document.getElementById("Name").innerHTML = 
+xmlDoc.getElementsByTagName("Name")[0].childNodes[0].nodeValue; 
+    document.getElementById("Otchestvo").innerHTML = 
+xmlDoc.getElementsByTagName("Otchestvo")[0].childNodes[0].nodeValue;
+    document.getElementById("Dolzhnost").innerHTML = 
+xmlDoc.getElementsByTagName("Dolzhnost")[0].childNodes[0].nodeValue; 
+    document.getElementById("DatePriemaNaRabotu").innerHTML = 
+xmlDoc.getElementsByTagName("DatePriemaNaRabotu")[0].childNodes[0].nodeValue; 
+ 
+</script> 
+ 
+</body> 
+</html>
