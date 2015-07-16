@@ -1,0 +1,77 @@
+# PR1_Usachev_lab_rab4
+ <script>
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="Root">
+<xs:complexType>
+<xs:choice maxOccurs="unbounded">
+<xs:element name="Thing" minOccurs="0" maxOccurs="unbounded">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="IDThing" type="xs:string" />
+<xs:element name="Count_Thing" type="xs:int" />
+<xs:element name="Data_Thing" type="xs:data" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:choice>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+</script>
+<?xml version="1.0" encoding="utf-8"?>
+<Root xmlns="XSD1.xsd"> Сотрудники<!—обратите внимание на ссылку на xsd —> <br />
+<Thing>
+<Thing> <table border="1"> <tr>
+<td><Count_Thing>Код сотрудника</Count_Thing></td>
+<td><IDThing>Фамилия</IDThing></td>
+<td><IDThing>Имя</IDThing></td>
+<td><IDThing>Отчество</IDThing></td>
+<td><IDThing>Должность</IDThing></td>
+<td><Data_Thing>Дата приема на работу</Data_Thing></td></tr>
+<tr>
+<td><Count_Thing>1</Count_Thing></td>
+<td><IDThing>Иванов</IDThing></td>
+<td><IDThing>Иван</IDThing></td>
+<td><IDThing>Иванович</IDThing></td>
+<td><IDThing>продавец</IDThing></td>
+<td><Data_Thing>21.02.15</Count_Thing></td>
+
+</tr>
+<tr>
+<td><Count_Thing>2</Count_Thing></td>
+<td><IDThing>Гусева</IDThing></td>
+<td><IDThing>Наталья</IDThing></td>
+<td><IDThing>Алексеевна</IDThing></td>
+<td><IDThing>продавщица</IDThing></td>
+<td><Data_Thing>11.02.15</Count_Thing></td>
+
+</tr><tr>
+<td><Count_Thing>3</Count_Thing></td>
+<td><IDThing>Копанева</IDThing></td>
+<td><IDThing>Екатерина</IDThing></td>
+<td><IDThing>Дмитриевна</IDThing></td>
+<td><IDThing>психолог</IDThing></td>
+<td><Data_Thing>13.03.15</Count_Thing></td>
+
+</tr><tr>
+<td><Count_Thing>4</Count_Thing></td>
+<td><IDThing>Арасланов</IDThing></td>
+<td><IDThing>Андрей</IDThing></td>
+<td><IDThing>Игоревич</IDThing></td>
+<td><IDThing>водитель</IDThing></td>
+<td><Data_Thing>15.04.15</Count_Thing></td>
+
+</tr>
+<tr>
+<td><Count_Thing>5</Count_Thing></td>
+<td><IDThing>Петров</IDThing></td>
+<td><IDThing>Петр</IDThing></td>
+<td><IDThing>Петрович</IDThing></td>
+<td><IDThing>уборщик</IDThing></td>
+<td><Data_Thing>17.01.15</Count_Thing></td>
+
+</tr>
+</table>
+</Thing>
+</Root>
